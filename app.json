@@ -1,0 +1,19 @@
+{
+  "name": "pio-demo-eventserver",
+  "description": "PredictionIO eventserver for demo",
+  "keywords": [
+    "predictionio",
+    "machinelearning"
+  ],
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/chanlee514/pio-buildpack"
+    },
+    {
+      "url": "heroku/scala"
+    }
+  ]
+}
