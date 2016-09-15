@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-PIO_VERSION=0.9.5
+PIO_VERSION=0.9.6
 PIO_BUILD=PredictionIO-${PIO_VERSION}
 
 # Move app to a static build dir to keep paths the same between builds
@@ -20,7 +20,7 @@ rm -rf ${BUILD_DIR}/${PIO_BUILD}/target
 # Install Spark in /vendors directory
 VENDORS_DIR=${BUILD_DIR}/vendors
 mkdir ${VENDORS_DIR}
-SPARK_VERSION=1.3.1
+SPARK_VERSION=1.5.1
 SPARK_DIR=${VENDORS_DIR}/spark-${SPARK_VERSION}
 SPARK_FILE=spark-${SPARK_VERSION}-bin-hadoop2.6
 echo "-----> Downloading Spark for PredictionIO..."
